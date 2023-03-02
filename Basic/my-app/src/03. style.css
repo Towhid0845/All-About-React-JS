@@ -1,0 +1,6 @@
+.main {
+	font-size: 30px;
+}
+p:first-child {
+	font-family: "Roboto", sans-serif;
+}

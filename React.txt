@@ -1,0 +1,111 @@
+🔥 create a React application 🔥
+--------------------------------
+    1️⃣ npx create-react-app xyz-app
+    2️⃣ cd xyz-app    
+    3️⃣ npm start
+
+
+🔥 File Structure of React 🔥
+-----------------------------
+    App.js ➡️ index.js ➡️ index.html
+    
+    ✅ App.js is a component. This is the actual file where we write all our code. 
+        We export it in index.js(or other js file)
+
+    ✅ index.js is works as a medium. 
+        It imports the App.js file and render it in the index.html file using an id.
+
+    ✅ index.html is the reason for that we see the project in web browser.
+
+
+🔥 Babel 🔥
+-----------
+    ✅ babel is a JavaScript compiler
+    ✅ it wrap's the code for us.
+    ✅ It is automatically installed in React when we create a react app.
+    ❤️ Example:                            
+                code for user               |            code for browser
+                -------------               |            ----------------
+                                            |    "use strict";
+        const towhid = 'web developer';     |    var towhid = 'web developer';
+        const myapp = () = {                |    var myapp = function() {
+            console.log('Hello Towhid');    |        console.log('Hello Towhid');
+        }                                   |    }
+
+
+🔥 JSX (JavaScript XML) 🔥
+--------------------------
+    ✅ It allow us to write JavaScript and HTML code together. 
+    ✅ It always return a single element. You must need to wrap all the code within a sigle tag.
+    ✅ It is better to use <></> (syntactic sugar format of <React.Fragment>) as wrapper tag.
+    ✅ You need to close all non-closing tag.
+    ✅ You must use two-words attribute in camelCase. e.g. onClick={} (but normaly onclick()) or use single word normally.
+    ✅ We need to write 'className' instead of 'class' because it is an attribute.
+    🗄️ See the detail in 📁Basic > 📁myapp > 📁src > index.js > at point 5
+
+    ❤️ Example
+        ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
+                        ---------------------
+                                 ⬇️            
+                            This is JSX 
+
+
+🔥 React Fragment 🔥
+--------------------
+    ✅ the JSX code should wrap within a single tag called <React.Fragment></React.Fragment>
+    ✅ simplest form of React Fragment is <></>
+    🗄️ See the detail in 📁Basic > 📁myapp > 📁src > index.js > at point 4
+
+
+🔥 Component 🔥
+---------------
+    ✅ At first, it is better to add 'import React from "react"'
+    ✅ At least, one function (functional Component) need to add in that component.
+    ✅ Functon name should be Capitalized.
+    ✅ You must return something (JSX).
+
+
+
+
+
+----------------------------------------------------------------------------------------------
+
+
+🌟 ReactDOM.render()
+    It controls the contents of the container node you pass in.
+    It currently returns a referance to the root ReactComponent instance.
+
+🌟 React Hook
+    ✅ write it before a function return.
+
+
+🌟 useState Hook
+    ✅ It takes a single parameter as initial data.
+    ✅ It is used to manage data.
+    ✅ It returns an array of two elements(first: state variable & second: updated function).
+
+
+🌟 how to access input feild data in JS❓
+    ✅ use 'value' and 'onChange' attribute to access it.
+
+🌟 Math Functons 🌟
+--------------------
+    ✅ variable_name.toFixed(number): how many number you want after decimal point.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🙋‍♂️👨‍🏫 What is React? 🙋‍♂️👨‍🏫
+    React is a JavaScript library for building user interfaces and it is using all about components
+

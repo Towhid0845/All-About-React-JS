@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// If we have single object.
+			const Vehicle = {
+				model: "007",
+				year: 2022,
+				color: "gray",
+				brand: "Audi",
+				type: "car",
+			};
+			myVehicle(Vehicle);
+			function myVehicle({ model, color, brand, type }) {
+				const msg =
+					"My " + type + " is a " + color + " " + brand + " " + model + ".";
+				document.write(msg);
+			}
+
+			// If we have nested objects.
+			const Vehicle_01 = {
+				model: "007",
+				year: 2022,
+				color: "gray",
+				brand: "Audi",
+				type: "car",
+				registration: {
+					city: "Dhaka",
+					Thana: "Mirpur",
+					contry: "Bangladesh",
+				},
+			};
+			myVehicle_01(Vehicle_01);
+			function myVehicle_01({ brand, model, registration: { city, contry } }) {
+				const msg =
+					"<br>My " +
+					brand +
+					" " +
+					model +
+					" is registred in " +
+					city +
+					", " +
+					contry +
+					".";
+				document.write(msg);
+			}
+		</script>
+	</body>
+</html>
