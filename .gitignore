@@ -1,4 +1,12 @@
 Projects/
 Basic/node_modules/
+Basic/package-lock.json
+Basic/package.json
 Basic/my-app/node_modules/
+Basic/my-app/package-lock.json
+Basic/my-app/package.json
+Basic/my-app/README.md
 style-and-hook/node_modules/
+style-and-hook/package-lock.json
+style-and-hook/README.md
+
