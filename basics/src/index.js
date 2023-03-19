@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 // import Mybook from "./Hook.js";
 
@@ -139,27 +139,23 @@ import ReactDOM from "react-dom";
 // 	document.getElementById("root")
 // );
 
-// 09. How to use a component inside other component.
+// 9️⃣ How to use a component inside other component.
 // import Student from "./09. component inside another component";
 // ReactDOM.render(<Student />, document.getElementById("root"));
 
-// 10. How to use Props in component
+// 🔟 How to use Props in component
 // import Book from "./10. props";
 // ReactDOM.render(<Book color="red" />, document.getElementById("root"));
 
-// 11. How to pass a property one component to another component:
+// 11.How to pass a props one component to another component 🔥
 // import Women from "./11. pass props to another component";
 // ReactDOM.render(<Women />, document.getElementById("root"));
 
-// 12.How to pass an object one component to another component:
+// 12.How to pass an object one component to another component 🔥
 // import University from "./12. pass an object to another component";
 // ReactDOM.render(<University />, document.getElementById("root"));
 
-// 13. onclick event:
-// import Football from "./13. onClick event";
-// ReactDOM.render(<Football />, document.getElementById("root"));
-
-// 14. Pass an argument through event handler:
+// 14. Pass an argument through event handler 🔥
 // import Football from "./14. pass arug through event handler";
 // ReactDOM.render(<Football />, document.getElementById("root"));
 
@@ -185,9 +181,20 @@ import ReactDOM from "react-dom";
 // import Bookshelf from "./19. key";
 // ReactDOM.render(<Bookshelf />, document.getElementById("root"));
 
-// 20. How to use 'Hook' in React:
-// import Color from "./20. hook example";
-// ReactDOM.render(<Color />, document.getElementById("root"));
+// ✅ How to use 'Hook' in React:
+// import App from "./style-hook-event/App";
+// import HookApp from "./style-hook-event/HookApp";
+// import ExampleApp from "./style-hook-event/ExampleApp";
+// ReactDOM.render(
+// 	<>
+// 		<React.StrictMode>
+// 			{/* <App /> */}
+// 			{/* <HookApp /> */}
+// 			<ExampleApp />
+// 		</React.StrictMode>
+// 	</>,
+// 	document.getElementById("root")
+// );
 
 // 21. useState
 // import Mybook from "./21. useState";

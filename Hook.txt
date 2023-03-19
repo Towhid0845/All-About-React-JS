@@ -1,5 +1,0 @@
-Hook can not run under any condition
-Hook can not run under a class component
-Hook works only in function component
-Hook must be executed in same exact order
-Hook must be decleared at the top of the functional component

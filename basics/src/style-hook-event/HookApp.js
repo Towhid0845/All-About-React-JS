@@ -1,14 +1,14 @@
 import React from "react";
-import UseReducer from "./component/Hooks/useReducer";
+// import UseReducer from "./component/Hooks/useReducer";
 // import UseEffect from "./component/Hooks/useEffect";
-// import UseState from "./component/Hooks/UseState";
+import UseState from "./component/Hooks/useState";
 
 const HookApp = () => {
 	return (
 		<>
-			<UseReducer />
+			{/* <UseReducer /> */}
 			{/* <UseEffect /> */}
-			{/* <UseState /> */}
+			<UseState />
 		</>
 	);
 };

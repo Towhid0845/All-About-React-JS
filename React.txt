@@ -65,6 +65,11 @@
     ✅ You must return something (JSX).
 
 
+🔥 React Developer Tools 🔥
+---------------------------
+    ✅ It is a browser(chrome, mozila, safari, edge)extension for React.
+    ✅ We use it to know what components are used in a React application.
+
 
 
 
@@ -76,22 +81,34 @@
     It currently returns a referance to the root ReactComponent instance.
 
 🌟 React Hook
-    ✅ write it before a function return.
-
+    ✅ It allows you to use state and other Teact features without writing a class.
+    ✅ Hooks are the functions which "hook into" React state and lifecycle features from function components.
+    ✅ It does not work inside classes.
+    ✅ Write it at the top of a functional component(before the function return).
+    ✅ Hook can not run under any condition
 
 🌟 useState Hook
     ✅ It takes a single parameter as initial data.
     ✅ It is used to manage data.
     ✅ It returns an array of two elements(first: state variable & second: updated function).
-
-
-🌟 how to access input feild data in JS❓
+    ❤️ Example:
+        const [currentValue, setCurrentValue] = useState(initialValue)
+        Here, initailly currentValue = initialValue;
+        when update_function(setCurrentValue) is updated, currentValue = updated_Value
+    🗄️ see the detail in 📁style-and-hook. 
+    
+🌟 how to access input field data in JS❓
     ✅ use 'value' and 'onChange' attribute to access it.
 
 🌟 Math Functons 🌟
 --------------------
     ✅ variable_name.toFixed(number): how many number you want after decimal point.
 
+🌟 key prop in map method 🌟
+-----------------------------
+    ✅ Keys help React identify which items have changed (added/removed/re-ordered).
+    ✅ To give a unique identity to every element inside the array, a key is required.
+    ✅ When we use map() method to extract a list (every child of the list must contain a unique value), we always should use a key prop.
 
 
 
@@ -101,10 +118,7 @@
 
 
 
-
-
-
-
+-------------------------------------------------
 
 🙋‍♂️👨‍🏫 What is React? 🙋‍♂️👨‍🏫
     React is a JavaScript library for building user interfaces and it is using all about components
