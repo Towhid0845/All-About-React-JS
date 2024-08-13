@@ -36,12 +36,12 @@
 🔥 JSX (JavaScript XML) 🔥
 --------------------------
     ✅ It allow us to write JavaScript and HTML code together. 
-    ✅ It always return a single element. You must need to wrap all the code within a sigle tag.
+    ✅ It always return a single element. You must need to wrap all the code within a single tag.
     ✅ It is better to use <></> (syntactic sugar format of <React.Fragment>) as wrapper tag.
     ✅ You need to close all non-closing tag.
-    ✅ You must use two-words attribute in camelCase. e.g. onClick={} (but normaly onclick()) or use single word normally.
+    ✅ You must use two-words attribute in camelCase. e.g. onClick={} (but normally onclick()) or use single word normally.
     ✅ We need to write 'className' instead of 'class' because it is an attribute.
-    🗄️ See the detail in 📁Basic > 📁myapp > 📁src > index.js > at point 5
+    🗄️ See the detail in 📁learn > 📁src > index.js > at point 5
 
     ❤️ Example
         ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
@@ -54,20 +54,20 @@
 --------------------
     ✅ the JSX code should wrap within a single tag called <React.Fragment></React.Fragment>
     ✅ simplest form of React Fragment is <></>
-    🗄️ See the detail in 📁Basic > 📁myapp > 📁src > index.js > at point 4
+    🗄️ See the detail in 📁learn > 📁src > index.js > at point 4
 
 
 🔥 Component 🔥
 ---------------
     ✅ At first, it is better to add 'import React from "react"'
     ✅ At least, one function (functional Component) need to add in that component.
-    ✅ Functon name should be Capitalized.
+    ✅ Function name should be Capitalized.
     ✅ You must return something (JSX).
 
 
 🔥 React Developer Tools 🔥
 ---------------------------
-    ✅ It is a browser(chrome, mozila, safari, edge)extension for React.
+    ✅ It is a browser(chrome, mozilla, safari, edge) extension for React.
     ✅ We use it to know what components are used in a React application.
 
 
@@ -78,29 +78,29 @@
 
 🌟 ReactDOM.render()
     It controls the contents of the container node you pass in.
-    It currently returns a referance to the root ReactComponent instance.
+    It currently returns a reference to the root ReactComponent instance.
 
 🌟 React Hook
-    ✅ It allows you to use state and other Teact features without writing a class.
+    ✅ It allows you to use state and other React features without writing a class.
     ✅ Hooks are the functions which "hook into" React state and lifecycle features from function components.
     ✅ It does not work inside classes.
     ✅ Write it at the top of a functional component(before the function return).
     ✅ Hook can not run under any condition
 
 🌟 useState Hook
-    ✅ It takes a single parameter as initial data.
     ✅ It is used to manage data.
+    ✅ It takes a single parameter as initial data.
     ✅ It returns an array of two elements(first: state variable & second: updated function).
     ❤️ Example:
         const [currentValue, setCurrentValue] = useState(initialValue)
-        Here, initailly currentValue = initialValue;
+        Here, initially currentValue = initialValue;
         when update_function(setCurrentValue) is updated, currentValue = updated_Value
-    🗄️ see the detail in 📁style-and-hook. 
+    🗄️ see the detail in 📁learn > 📁src > index.js > at point 20 
     
 🌟 how to access input field data in JS❓
     ✅ use 'value' and 'onChange' attribute to access it.
 
-🌟 Math Functons 🌟
+🌟 Math Functions 🌟
 --------------------
     ✅ variable_name.toFixed(number): how many number you want after decimal point.
 
@@ -121,5 +121,5 @@
 -------------------------------------------------
 
 🙋‍♂️👨‍🏫 What is React? 🙋‍♂️👨‍🏫
-    React is a JavaScript library for building user interfaces and it is using all about components
+    React is a JavaScript library for building user interfaces and it is all about components
 

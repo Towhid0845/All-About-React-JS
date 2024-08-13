@@ -1,6 +1,6 @@
 import { useState } from "react";
 function MyHobby() {
-	const [hobby1, sethobby1] = useState("Travelling");
+	const [hobby1, sethobby1] = useState("Traveling");
 	const [hobby2, sethobby2] = useState("Adventure");
 	const [hobby3, sethobby3] = useState("Watching Movie");
 	const [hobby4, sethobby4] = useState("Gardening");

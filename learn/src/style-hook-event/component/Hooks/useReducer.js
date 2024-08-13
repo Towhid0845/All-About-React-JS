@@ -9,7 +9,7 @@ const reducer = (state, action) => {
 	}
 	return state;
 };
-// This code (useReducer hook) is working similer as useState hook.
+// This code (useReducer hook) is working similar as useState hook.
 // The process is lengthy but, we use this hook in bigger projects.
 const UseReducer = () => {
 	// dispatch is used to trigger reducer function

@@ -1,7 +1,7 @@
 import { useState } from "react";
 function MyHobby() {
-	const [hobby, sethobby] = useState({
-		hobby1: "Travelling",
+	const [hobby, setHobby] = useState({
+		hobby1: "Traveling",
 		hobby2: "Adventure",
 		hobby3: "Watching Movie",
 		hobby4: "Gardening",
@@ -9,7 +9,7 @@ function MyHobby() {
 	});
 
 	const updateHobby = () => {
-		sethobby((previousState) => {
+		setHobby((previousState) => {
 			return { ...previousState, hobby5: "Teaching" };
 		});
 	};

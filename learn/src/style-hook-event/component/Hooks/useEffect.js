@@ -7,7 +7,7 @@ const UseEffect = () => {
 	useEffect(() => {
 		document.title = `Chats(${myNum})`;
 		// every time when I click it will console Hi...
-		// console.log("Hi...");
+		console.log("Hi...");
 	});
 	// after adding array dependency, only first time it console Hi...
 	// }, []);

@@ -1,65 +1,80 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
+// import "./05. JS XML.css";
+// import App from "./style-hook-event/App";
+// import HookApp from "./style-hook-event/HookApp";
+// import ExampleApp from "./style-hook-event/ExampleApp";
 // import Mybook from "./Hook.js";
+// import MyHobby from "./23. multipleState";
+// import MyHobby from "./24. object in a hook";
+// import MyHobby from "./25. update object in state";
+// import Timer from "./26. useEffect hook";
+// import Counter from "./27. useEffect dependent on veriable";
+// import Timer from "./28. clear Timeout using useEffect";
+// import Component1 from "./29. prop drilling problem";
+// import Component1 from "./30. createContext and useContext";
+// import CountRender from "./31. Render counting using 'useRef'";
+// import Focus from "./32. foucusInput using 'useref'";
+// import Tracking from "./33. previous state value tracking using 'useref'";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // 1️⃣ how to render 🔥
-// ReactDOM.render("what to Show", "where to show", "calback function");
+// root.render("what to Show", "where to show", "calback function");
 
 // ✅ render directly
-// ReactDOM.render(<p>Welcome</p>, document.getElementById("root"));
+// root.render(<p>Welcome</p>);
 
 // ✅ or import a file and render
 // import myfirstelement from "./01. how to render";
-// ReactDOM.render(myfirstelement, document.getElementById("root"));
+// root.render(myfirstelement);
 
 // ✅ Render multiple element
 // In React v16 it's possible for render() to return an array of elements.
-// ReactDOM.render(
+// root.render(
 // 	[
 // 		<h2>Hello Towhid!</h2>,
 // 		<h3>How are you ?</h3>,
 // 		<h4>What are you doing ?</h4>,
-// 	],
-// 	document.getElementById("root")
+// 	]
+//
 // );
 
 // 2️⃣ add math expressions and JS variable to JSX 🔥
 // use pair of curly braces '{}' to show the expression.
 // But we can't use statement inside '{}'
 // var temp = "Towhid";
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		<h1>
 // 			{temp}, React is {5 + 5} time better than JSX.
 // 		</h1>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // 4️⃣ How to use 'fragment (<></>)' to wrap multiple HTML lines 🔥
-// ReactDOM.render(
-// 	<>
+// root.render(
+//     <>
 // 		<p>I am a paragraph.</p>
 // 		<p>I am a paragraph too.</p>
-// 	</>,
-// 	document.getElementById("root")
-// );
+// 	</>
+// )
 
-// 5️⃣ How to use attirbute in JSX 🔥
-// import "./05. JS XML.css";
+// 5️⃣ How to use attribute in JSX 🔥
+
 // const temp = "Towhid";
 // const link = "https://picsum.photos/200/300";
-// ReactDOM.render(
-// 	<>
-// 		<div className="main">
-// 			<h1 contentEditable="true">My name is {temp}</h1> {/* camel case */}
-// 			{/* <img src="https://picsum.photos/200/300" alt="error" /> */}
-// 			{/* or */}
-// 			<img src={link} alt="error" />
-// 		</div>
-// 	</>,
-// 	document.getElementById("root")
-// );
+// root.render(
+//     <>
+//         <div className="main">
+//             <h1 contentEditable="true">My name is {temp}</h1> {/* camel case */}
+//             {/* <img src="https://picsum.photos/200/300" alt="error" /> */}
+//             {/* or */}
+//             <img src={link} alt="error" />
+//         </div>
+//     </>
+// )
+
 
 // 3️⃣ Add CSS & Google Fonts🔥
 
@@ -67,25 +82,25 @@ import ReactDOM from "react-dom";
 //  add google font link in 'index.html' file.
 //  add css rules to the css file.
 // import "./03. style.css";
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		<div className="main">
 // 			<p contentEditable="true">Without Google Font</p>
 // 			<p contentEditable="true">With Google Font</p>
 // 		</div>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // ✅ Inline Styling
-// Syntex: style = {object}
+// Syntax: style = {object}
 // const style = {
 // 	fontSize: "30px",
 // 	textTransform: "uppercase",
 // 	textShadow: "0px 2px 4px #000",
 // 	fontFamily: '"Roboto", sans-serif',
 // };
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		<div style={{ fontSize: "30px", textTransform: "uppercase" }}>
 // 			<p>This Inline Styling in React JS</p>
@@ -94,8 +109,8 @@ import ReactDOM from "react-dom";
 // 		<div style={style}>
 // 			<p>This Inline Styling in React JS</p>
 // 		</div>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // 6️⃣ 'If statement' work outside of JSX code 🔥
@@ -104,27 +119,27 @@ import ReactDOM from "react-dom";
 // if (x < 10) {
 // 	flag = "Welcome";
 // }
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		<h2>{flag}</h2>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // 7️⃣ Use ternary expressions instead of 'If statement' 🔥
 // const x = 8;
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		<h2>{x < 10 ? "Welcome" : "Goodbye"}</h2>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // 8️⃣ Understand React component & Export 🔥
 // import Book from "./08. react component"; // This is default export.
 // import Book, { name, fullname } from "./08. react component"; // Export all together
 // import * as temp from "./08. react component"; // Export all as an object
-// ReactDOM.render(
+// root.render(
 // 	<>
 // 		{/* <Book /> */}
 
@@ -135,146 +150,123 @@ import ReactDOM from "react-dom";
 // 		{/* <temp.default />
 // 		<p>{temp.name}</p>
 // 		<p>{temp.fullname}</p> */}
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
+//
 // );
 
 // 9️⃣ How to use a component inside other component.
 // import Student from "./09. component inside another component";
-// ReactDOM.render(<Student />, document.getElementById("root"));
+// root.render(<Student />);
 
 // 🔟 How to use Props in component
 // import Book from "./10. props";
-// ReactDOM.render(<Book color="red" />, document.getElementById("root"));
+// root.render(<Book color="red" />);
 
 // 11.How to pass a props one component to another component 🔥
 // import Women from "./11. pass props to another component";
-// ReactDOM.render(<Women />, document.getElementById("root"));
+// root.render(<Women />);
 
 // 12.How to pass an object one component to another component 🔥
 // import University from "./12. pass an object to another component";
-// ReactDOM.render(<University />, document.getElementById("root"));
+// root.render(<University />);
 
 // 14. Pass an argument through event handler 🔥
 // import Football from "./14. pass arug through event handler";
-// ReactDOM.render(<Football />, document.getElementById("root"));
+// root.render(<Football />);
 
 // 15. Render Using 'if statement':
 // import Play from "./15. Render using 'if statement'";
-// ReactDOM.render(<Play flag={true} />, document.getElementById("root"));
+// root.render(<Play flag={true} />);
 
 // 16. Render using 'Logical && operator':
 // import Bookshelf from "./16. Render using '&& operator'";
 // const books = ["Nobel1", "Nobel2", "Nobel3"];
 // // const books = [];
-// ReactDOM.render(<Bookshelf books={books} />, document.getElementById("root"));
+// root.render(<Bookshelf books={books} />);
 
 // 17. Render using 'Ternary operator':
 // import Play from "./17. Render using 'Ternary operator'";
-// ReactDOM.render(<Play flag={false} />, document.getElementById("root"));
+// root.render(<Play flag={false} />);
 
 // 18. How react 'List' works:
 // import Bookshelf from "./18. List";
-// ReactDOM.render(<Bookshelf />, document.getElementById("root"));
+// root.render(<Bookshelf />);
 
 // 19. How to use 'Key' in React:
 // import Bookshelf from "./19. key";
-// ReactDOM.render(<Bookshelf />, document.getElementById("root"));
+// root.render(<Bookshelf />);
 
-// ✅ How to use 'Hook' in React:
-// import App from "./style-hook-event/App";
-// import HookApp from "./style-hook-event/HookApp";
-// import ExampleApp from "./style-hook-event/ExampleApp";
-// ReactDOM.render(
+// 20. How to use 'Hook' in React:
+// root.render(
 // 	<>
 // 		<React.StrictMode>
-// 			{/* <App /> */}
+// 			<App />
 // 			{/* <HookApp /> */}
-// 			<ExampleApp />
+// 			{/* <ExampleApp /> */}
 // 		</React.StrictMode>
-// 	</>,
-// 	document.getElementById("root")
+// 	</>
 // );
 
-// 21. useState
-// import Mybook from "./21. useState";
-// ReactDOM.render(<Mybook />, document.getElementById("root"));
-
-// 22. updateState
-// import MyHobby from "./22. updateState";
-// ReactDOM.render(<MyHobby />, document.getElementById("root"));
-
-// 23.multipleState
-// import MyHobby from "./23. multipleState";
-// ReactDOM.render(<MyHobby />, document.getElementById("root"));
+// 21.multipleState
+// root.render(<MyHobby />);
 
 // 24. object in a hook
-// import MyHobby from "./24. object in a hook";
-// ReactDOM.render(<MyHobby />, document.getElementById("root"));
+// root.render(<MyHobby />);
 
 // 25. Updating a object in state
-// import MyHobby from "./25. update object in state";
-// ReactDOM.render(<MyHobby />, document.getElementById("root"));
+// root.render(<MyHobby />);
 
 // 26. useEffect hook:
-// import Timer from "./26. useEffect hook";
-// ReactDOM.render(<Timer />, document.getElementById("root"));
+// root.render(<Timer />);
 
 // 27. useEffect hook dependent on variable:
-// import Counter from "./27. useEffect dependent on veriable";
-// ReactDOM.render(<Counter />, document.getElementById("root"));
+// root.render(<Counter />);
 
 // 28. clearTimeout for useEffect hook
-// import Timer from "./28. clear Timeout using useEffect";
-// ReactDOM.render(<Timer />, document.getElementById("root"));
+// root.render(<Timer />);
 
 // 29. prop drilling problem
-// import Component1 from "./29. prop drilling problem";
-// ReactDOM.render(<Component1 />, document.getElementById("root"));
+// root.render(<Component1 />);
 
 // 30. Solution using 'createContext' and 'useContext' hook:
-// import Component1 from "./30. createContext and useContext";
-// ReactDOM.render(<Component1 />, document.getElementById("root"));
+// root.render(<Component1 />);
 
 // 31. Render counting using 'useRef' hook
-// import CountRender from "./31. Render counting using 'useRef'";
-// ReactDOM.render(<CountRender />, document.getElementById("root"));
+// root.render(<CountRender />);
 
-// 32. focus input feild using 'useref'
-// import Focus from "./32. foucusInput using 'useref'";
-// ReactDOM.render(<Focus />, document.getElementById("root"));
+// 32. focus input felid using 'useref'
+// root.render(<Focus />);
 
 // 33. previous state value tracking using 'useRef' hook
-// import Tracking from "./33. previous state value tracking using 'useref'";
-// ReactDOM.render(<Tracking />, document.getElementById("root"));
+// root.render(<Tracking />);
 
 // 34. How to handle 'Form' in React:
 // import Form from "./34. 'Form' in React";
-// ReactDOM.render(<Form />, document.getElementById("root"));
+// root.render(<Form />);
 
 // 35. How to submit form input:
 // import Form from "./35. submitting form input";
-// ReactDOM.render(<Form />, document.getElementById("root"));
+// root.render(<Form />);
 
-// 36. submitting multiple input feild of a form:
+// 36. submitting multiple input felid of a form:
 // import Form from "./36. multiple input form submit";
-// ReactDOM.render(<Form />, document.getElementById("root"));
+// root.render(<Form />);
 
 // 37. How to use 'textarea' in React:
 // import Form from "./37. extarea in form";
-// ReactDOM.render(<Form />, document.getElementById("root"));
+// root.render(<Form />);
 
 // 38. How to use select in Form in React:
 // import Book from "./38. 'select' in Form in React";
-// ReactDOM.render(<Book />, document.getElementById("root"));
+// root.render(<Book />);
 
 // 39. How to use Router in React:
 // import App from "./39. Router in React";
-// ReactDOM.render(<App />, document.getElementById("root"));
+// root.render(<App />);
 
 // 40.
 
 // array to list
 // const myArray = ["apple", "banana", "orange", "mango"];
 // const myList = myArray.map((item) => <p>{item}</p>);
-// ReactDOM.render(myList, document.getElementById("root"));
+// root.render(myList);
