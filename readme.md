@@ -3,9 +3,9 @@ React is a JavaScript library for building user interfaces and it is all about c
 
 ## create a React application 🔥
 ``` code
-**npx create-react-app xyz-app**
-**cd xyz-app**  
-**npm start**
+npx create-react-app xyz-app
+cd xyz-app 
+npm start
 ```
 
 ## File Structure of React 🔥
@@ -19,14 +19,15 @@ App.js ➡️ index.js ➡️ index.html
 - babel is a JavaScript compiler
 - it wrap's the code for us.
 - It is automatically installed in React when we create a react app.
+
 Example ❤️                          
-|           code for user          |         code for browser        |
-|----------------------------------|---------------------------------|
-| "use strict";                    |                                 |
-| const towhid = 'web developer';  | var towhid = 'web developer';   |
-| const myapp = () = {             | var myapp = function() {        |
-|   console.log('Hello Towhid');   |    console.log('Hello Towhid'); |
-| }                                | }                               |
+|code for user|code for browser|
+|-------------|----------------|
+|"use strict";| |
+|const towhid = 'web developer';|var towhid = 'web developer';|
+|const myapp = () = {|var myapp = function() {|
+|console.log('Hello Towhid');|console.log('Hello Towhid');|
+|}|}|
 
 ## JSX (JavaScript XML) 🔥
 - It allow us to write JavaScript and HTML code together. 
@@ -37,28 +38,25 @@ Example ❤️
 - We need to write 'className' instead of 'class' because it is an attribute.
 
 📓 See the detail in 📁learn > 📁src > index.js > at point 5
+
 Example ❤️
 ```code
 ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
                 ---------------------
                             ⬇️            
-                    This is JSX 
+                        This is JSX 
 ```
-
-
 ## React Fragment 🔥
--  the JSX code should wrap within a single tag called <React.Fragment></React.Fragment>
+-  the JSX code should wrap within a single tag called `<React.Fragment></React.Fragment>`
 -  simplest form of React Fragment is <></>
 
 📓 See the detail in 📁learn > 📁src > index.js > at point 4
-
 
 ## Component 🔥
 - At first, it is better to add 'import React from "react"'
 - At least, one function (functional Component) need to add in that component.
 - Function name should be Capitalized.
 - You must return something (JSX).
-
 
 ## React Developer Tools 🔥
 - It is a browser(chrome, mozilla, safari, edge) extension for React.
@@ -80,9 +78,9 @@ It controls the contents of the container node you pass in. It currently returns
 - It returns an array of two elements(first: state variable & second: updated function).
 
 Example ❤️
-    const [currentValue, setCurrentValue] = useState(initialValue)
-    Here, initially currentValue = initialValue;
-    when update_function(setCurrentValue) is updated, currentValue = updated_Value
+`const [currentValue, setCurrentValue] = useState(initialValue)`
+Here, initially currentValue = initialValue;
+when update_function(setCurrentValue) is updated, currentValue = updated_Value
 
 📓 see the detail in 📁learn > 📁src > index.js > at point 20 
 
