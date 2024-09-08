@@ -1,5 +1,6 @@
-## What is React?
+## What is React? 🔥
 React is a JavaScript library for building user interfaces and it is all about components.
+Online code editor for React.js is codesendbox.io. To access it just right `react.new`
 
 ## create a React application 🔥
 ``` code
@@ -46,6 +47,7 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
                             ⬇️            
                         This is JSX 
 ```
+
 ## React Fragment 🔥
 -  the JSX code should wrap within a single tag called `<React.Fragment></React.Fragment>`
 -  simplest form of React Fragment is <></>
@@ -65,6 +67,12 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 ## ReactDOM.render() 🔥
 It controls the contents of the container node you pass in. It currently returns a reference to the root ReactComponent instance.
 
+## State 🔥
+Whenever we want to change something in react we need to use state.
+    `cont [temp, setTemp] = useState("")`
+    Here, useState is function which we are destructuring as array.
+    `temp` is initial value of the state and `setTemp` is a setter function to update the value of `temp`. 
+
 ## React Hook 🔥
 - It allows you to use state and other React features without writing a class.
 - Hooks are the functions which "hook into" React state and lifecycle features from function components.
@@ -78,6 +86,7 @@ It controls the contents of the container node you pass in. It currently returns
 - It returns an array of two elements(first: state variable & second: updated function).
 
 Example ❤️
+
 `const [currentValue, setCurrentValue] = useState(initialValue)`
 Here, initially currentValue = initialValue;
 when update_function(setCurrentValue) is updated, currentValue = updated_Value
