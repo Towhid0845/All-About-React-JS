@@ -69,6 +69,7 @@ It controls the contents of the container node you pass in. It currently returns
 
 ## State 🔥
 Whenever we want to change something in react we need to use state.
+ 
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
     `temp` is initial value of the state and `setTemp` is a setter function to update the value of `temp`. 

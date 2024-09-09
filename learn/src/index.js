@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import FirstApp from "./style-hook-event/FirstApp";
 // import "./05. JS XML.css";
 // import App from "./style-hook-event/App";
 // import HookApp from "./style-hook-event/HookApp";
@@ -17,6 +18,11 @@ import ReactDOM from "react-dom/client";
 // import Focus from "./32. foucusInput using 'useref'";
 // import Tracking from "./33. previous state value tracking using 'useref'";
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// A react example
+// root.render(
+//     <FirstApp />
+// )
 
 // 1️⃣ how to render 🔥
 // root.render("what to Show", "where to show", "calback function");
@@ -200,9 +206,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
 // 	<>
 // 		<React.StrictMode>
-// 			<App />
+// 			{/* <App /> */}
 // 			{/* <HookApp /> */}
-// 			{/* <ExampleApp /> */}
+// 			<ExampleApp />
 // 		</React.StrictMode>
 // 	</>
 // );
