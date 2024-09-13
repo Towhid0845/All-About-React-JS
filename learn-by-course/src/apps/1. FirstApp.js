@@ -18,6 +18,7 @@ function App() {
       <h1>{advice}</h1>
       <button onClick={getAdvice}>get advice</button>
       <Messege count={count} />
+      <p>Please, try to understand how the code is working here...</p>
     </>
   );
 }

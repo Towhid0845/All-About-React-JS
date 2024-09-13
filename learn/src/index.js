@@ -1,22 +1,21 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-// import FirstApp from "./style-hook-event/FirstApp";
-// import "./05. JS XML.css";
-// import App from "./style-hook-event/App";
-// import HookApp from "./style-hook-event/HookApp";
-// import ExampleApp from "./style-hook-event/ExampleApp";
-// import Mybook from "./Hook.js";
-// import MyHobby from "./23. multipleState";
-// import MyHobby from "./24. object in a hook";
-// import MyHobby from "./25. update object in state";
-// import Timer from "./26. useEffect hook";
-// import Counter from "./27. useEffect dependent on veriable";
-// import Timer from "./28. clear Timeout using useEffect";
-// import Component1 from "./29. prop drilling problem";
-// import Component1 from "./30. createContext and useContext";
-// import CountRender from "./31. Render counting using 'useRef'";
-// import Focus from "./32. foucusInput using 'useref'";
-// import Tracking from "./33. previous state value tracking using 'useref'";
+import FirstApp from "./style-hook-event/FirstApp";
+import "./05. JS XML.css";
+import App from "./style-hook-event/App";
+import HookApp from "./style-hook-event/HookApp";
+import ExampleApp from "./style-hook-event/ExampleApp";
+import Play from "./15. Render using 'if statement'";
+import MyHobby from "./23. multipleState";
+import MyHobby1 from "./24. object in a hook";
+import MyHobby2 from "./25. update object in state";
+import Timer from "./26. useEffect hook";
+import Counter from "./27. useEffect dependent on veriable";
+import Timer1 from "./28. clear Timeout using useEffect";
+import Component1 from "./29. prop drilling problem";
+import Component2 from "./30. createContext and useContext";
+import CountRender from "./31. Render counting using 'useRef'";
+import Focus from "./32. foucusInput using 'useref'";
+import Tracking from "./33. previous state value tracking using 'useref'";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 // A react example
@@ -80,7 +79,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 //         </div>
 //     </>
 // )
-
 
 // 3️⃣ Add CSS & Google Fonts🔥
 
@@ -181,7 +179,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<Football />);
 
 // 15. Render Using 'if statement':
-// import Play from "./15. Render using 'if statement'";
 // root.render(<Play flag={true} />);
 
 // 16. Render using 'Logical && operator':
@@ -217,10 +214,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<MyHobby />);
 
 // 24. object in a hook
-// root.render(<MyHobby />);
+// root.render(<MyHobby1 />);
 
 // 25. Updating a object in state
-// root.render(<MyHobby />);
+// root.render(<MyHobby2 />);
 
 // 26. useEffect hook:
 // root.render(<Timer />);
@@ -229,13 +226,13 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(<Counter />);
 
 // 28. clearTimeout for useEffect hook
-// root.render(<Timer />);
+// root.render(<Timer1 />);
 
 // 29. prop drilling problem
 // root.render(<Component1 />);
 
 // 30. Solution using 'createContext' and 'useContext' hook:
-// root.render(<Component1 />);
+// root.render(<Component2 />);
 
 // 31. Render counting using 'useRef' hook
 // root.render(<CountRender />);

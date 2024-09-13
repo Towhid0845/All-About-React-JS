@@ -26,8 +26,8 @@ Online code editor for React.js is codesendbox.io. To access it just right `reac
    - The commands are:
      ```code
      npm create vite@latest
-     ```
      and then, follow the steps.
+     ```
    - 👉 It is a modern tool that contains a template for setting up react applications
    - 👎 Need to manually setup ESLint and others.
    - 👍 Extremely fast hot module replacement (HRM) and bundling.
