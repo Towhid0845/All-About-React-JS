@@ -9,16 +9,18 @@ Online code editor for React.js is codesendbox.io. To access it just right `reac
 
 1. `create-react-app` tool.
 
-- The commands are:
-  ```code
-  npx create-react-app xyz-app
-  cd xyz-app
-  npm start
-  ```
-- 👉 It is a complete **"Stater Kit"** for react applications.
-- 👍 Everything is already configured: ESLint, Prettier, Jest, etc.
-- 👎 Uses slow and outdated technologies(i.e. webpack). This is why react official documents discourage to use this tool. Because in real world projects it takes longer time to refresh.
-- 👍But, we can use this tool for learning purpose. It is 100% perfect for learning projects. Because it easy to use in learning.
+   - The commands are:
+
+   ```code
+   npx create-react-app xyz-app
+   cd xyz-app
+   npm start
+   ```
+
+   - 👉 It is a complete **"Stater Kit"** for react applications.
+   - 👍 Everything is already configured: ESLint, Prettier, Jest, etc.
+   - 👎 Uses slow and outdated technologies(i.e. webpack). This is why react official documents discourage to use this tool. Because in real world projects it takes longer time to refresh.
+   - 👍But, we can use this tool for learning purpose. It is 100% perfect for learning projects. Because it easy to use in learning.
 
 ## File Structure of React 🔥
 
