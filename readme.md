@@ -3,7 +3,7 @@
 React is a JavaScript library for building user interfaces and it is all about components.
 Online code editor for React.js is codesendbox.io. To access it just right `react.new`
 
-## create a React application 🔥
+## Create a React Application 🔥
 
 **Two options for setting up a new react project.**
 
