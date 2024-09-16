@@ -56,6 +56,9 @@ Example ❤️
 |console.log('Hello Towhid');|console.log('Hello Towhid');|
 |}|}|
 
+## Debuging in React
+1. **If changes is not showing: ** check wheather your app is running or not.
+
 ## JSX (JavaScript XML) 🔥
 
 - It allow us to write JavaScript and HTML code together.
@@ -85,6 +88,11 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 
 ## Component 🔥
 
+- React applicationns are entirely make out of components
+- **Building blocks** of user interfaces in React
+- A piece of UI that has its own **data, logic and appearance**.
+- We buid complex **UIs by building multiple components and combining them**
+- Components can be **resused, nested** inside each other, and pass data between them.
 - At first, it is better to add 'import React from "react"'
 - At least, one function (functional Component) need to add in that component.
 - Function name should be Capitalized.
