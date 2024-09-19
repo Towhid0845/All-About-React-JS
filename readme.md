@@ -67,8 +67,17 @@ Example ❤️
 |console.log('Hello Towhid');|console.log('Hello Towhid');|
 |}|}|
 
+## ReactDOM.render() 🔥
+
+It controls the contents of the container node you pass in. It currently returns a reference to the root ReactComponent instance.
+
 ## Debuging in React
 1. **If changes is not showing: ** check wheather your app is running or not.
+
+## React Developer Tools 🔥
+
+- It is a browser(chrome, mozilla, safari, edge) extension for React.
+- We use it to know what components are used in a React application.
 
 ## JSX (JavaScript XML) 🔥
 
@@ -93,14 +102,12 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 ```
 
 ## React Fragment 🔥
-
 - the JSX code should wrap within a single tag called `<React.Fragment></React.Fragment>`
 - simplest form of React Fragment is <></>
 
 📓 See the detail in 📁learn > 📁src > index.js > at point 4
 
 ## Component 🔥
-
 - React applicationns are entirely make out of components
 - **Building blocks** of user interfaces in React
 - A piece of UI that has its own **data, logic and appearance**.
@@ -111,18 +118,24 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 - Function name should be Capitalized.
 - You must return something (JSX).
 
-## React Developer Tools 🔥
+## Props in React
+- Props are used to pass data from **parent components to child components (down the component tree).
+- Essential tool to **configure** and **customize** components (like function parameters).
+- With props, parent components **control** how child components look and work.
+- **Anything** can be passed as props: single values, arrays, objects, functions, even other components.
+- Props is data that **coming from the outside**, and can only be updated by the **parent component**.
+- For child component props are **read-only**,they are **immutable!** This is one of Teact's strict rules.
+- React follow **one way data flow**. Always parent to child.
 
-- It is a browser(chrome, mozilla, safari, edge) extension for React.
-- We use it to know what components are used in a React application.
-
-## ReactDOM.render() 🔥
-
-It controls the contents of the container node you pass in. It currently returns a reference to the root ReactComponent instance.
+## Why React in ONE-WAY DATA FLOW ?
+- It makes applications more predictable and easier to understand.
+- It makes applications easier to debug, as we have more control over the data.
+- It is more performant.
 
 ## State 🔥
-
-Whenever we want to change something in react we need to use state.
+- State is internal data that can be updated by the component's logic.
+- If you need to mutate props, you actually **need state**. 
+- Whenever we want to change something in react we need to use state.
 
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
