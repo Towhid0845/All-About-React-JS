@@ -10,7 +10,7 @@ React is a JavaScript library for building user interfaces and it is all about c
 **Declarative:**
 	- Describe what UI should look like using JSX, **based on current data**.
 	- React is an **abstraction** away from DOM: **we never touch the DOM**.
-	- Instead, we think of the UI as a **feflection of hte current data**. 
+	- Instead, we think of the UI as a **reflection of the current data**. 
 
 Online code editor for React.js is codesendbox.io. To access it just right `react.new`
 
@@ -133,9 +133,10 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 - It is more performant.
 
 ## State 🔥
-- State is internal data that can be updated by the component's logic.
-- If you need to mutate props, you actually **need state**. 
-- Whenever we want to change something in react we need to use state.
+- State is an internal data that a component **can hold over time**, necessary for information that it needs to **remember** throughout the app's lifecycle. 
+- It is like **Component's memory**. - It can be updated by the component's logic. - If you need to mutate props, you actually **need state**. - It updtae the component's view (by re-rendering it without local variable). 
+- Whenever we want to change something in react we need to use state. 
+- We don't do direct DOM manipolations in React beacuse it is **declarative** then, how is a component view updates ?
 
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
