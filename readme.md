@@ -136,11 +136,18 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 - State is an internal data that a component **can hold over time**, necessary for information that it needs to **remember** throughout the app's lifecycle. 
 - It is like **Component's memory**. - It can be updated by the component's logic. - If you need to mutate props, you actually **need state**. - It updtae the component's view (by re-rendering it without local variable). 
 - Whenever we want to change something in react we need to use state. 
-- We don't do direct DOM manipolations in React beacuse it is **declarative** then, how is a component view updates ?
+- We don't do direct DOM manipolations in React beacuse it is **declarative**.
 
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
     `temp` is initial value of the state and `setTemp` is a setter function to update the value of `temp`.
+
+## How is a component view updates ?
+- In React, a view is updated by re-rendering (call again) the component. Render means **calling the component function**.
+- A component is re-rendered when its state is updated.
+- So to update a components view, we just update the state using the **setFunction**.
+_So, React is called "React" because **It Reacts to State Changes by Re-rendering the UI**_
+
 
 ## React Hook 🔥
 
