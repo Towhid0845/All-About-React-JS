@@ -141,6 +141,12 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
     `temp` is initial value of the state and `setTemp` is a setter function to update the value of `temp`.
+- Each component has and manages **its own state**, no matter how many times we render the same component.
+- With state, we view UI as a **reflection of data changing over time**. We **_describe the reflection_** of data using state, event handlers, and JSX.
+- Use a stte variable for any data that the component should keep track of (remember) over time. **This is data that will change at some point**. In Vanilla JS, that's a let variable, or an [] or {}.
+- Whenever you want something in the component to be **dynamic**, create a piece of state related to that "thing", and update the state when the "thing" should change (aka "be dynamic")
+- When building a conmponent, imagine its view as a **relection of state chnaging over time**.
+- _For data that should not trigger component re-renders, **don't use state**. Use a regular variable instead. This a common **beginner mistake**.
 
 ## How is a component view updates ?
 - In React, a view is updated by re-rendering (call again) the component. Render means **calling the component function**.
