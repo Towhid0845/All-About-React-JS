@@ -177,8 +177,75 @@ when update_function(setCurrentValue) is updated, currentValue = updated_Value
 
 📓 see the detail in 📁learn > 📁src > index.js > at point 20
 
-## key prop in map method 🔥
+## Usefull Methods
+
+### Arrau.from()
+`Array.from()` is a built-in JavaScript method that creates a new array instance from an array-like or iterable object. It is particularly useful when you want to convert objects like NodeLists, strings, or Sets into actual arrays, allowing you to use array methods on them.
+
+### Syntax:
+```javascript
+Array.from(arrayLike, mapFunction, thisArg);
+```
+
+- **arrayLike**: Any object that looks like an array (e.g., NodeList, arguments, strings, Set, etc.).
+- **mapFunction (optional)**: A function to apply to each element before adding it to the array.
+- **thisArg (optional)**: A value to use as `this` when executing the map function.
+
+### Examples:
+
+1. **Converting Array-like Objects (NodeList)**:
+```javascript
+const nodeList = document.querySelectorAll('div'); // Returns a NodeList
+const array = Array.from(nodeList); // Converts NodeList to Array
+console.log(array); // Now it's an array
+```
+
+2. **Converting a String to an Array**:
+```javascript
+const str = 'Hello';
+const array = Array.from(str);
+console.log(array); // ["H", "e", "l", "l", "o"]
+```
+
+3. **Converting a Set to an Array**:
+```javascript
+const set = new Set([1, 2, 3]);
+const array = Array.from(set);
+console.log(array); // [1, 2, 3]
+```
+
+4. **Using `Array.from()` with a Mapping Function**:
+```javascript
+const numbers = [1, 2, 3];
+const doubleNumbers = Array.from(numbers, num => num * 2);
+console.log(doubleNumbers); // [2, 4, 6]
+```
+
+5. **Creating an Array from a Range**:
+```javascript
+const range = Array.from({ length: 5 }, (v, i) => i);
+console.log(range); // [0, 1, 2, 3, 4]
+```
+
+### key prop in map method 🔥
 
 - Keys help React identify which items have changed (added/removed/re-ordered).
 - To give a unique identity to every element inside the array, a key is required.
 - When we use map() method to extract a list (every child of the list must contain a unique value), we always use a key prop.
+
+
+## Controlled Element in React Form
+- input fields like input, dropdown should always use useState to update data so that react can control the form.
+- try to call a function like this: `onSubmit = {handleSubmit}`. don't do other works inline.
+
+
+## State VS Props
+| state | props |
+| --------------- | --------------- |
+| **Internal** data, owned by component | **External** data, owned by parent component |
+| Component is "memory" | Similar to function parameters |
+| can be updated by the component itself | Props are Read-only |
+| Uplating state causes component to re-render | **Receiving new props causes component to re-render.** Usually when the parent's state has been  updated |
+| Used to make components interactive | Used by parent to configure child component ("setting") |
+
+
