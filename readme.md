@@ -241,11 +241,40 @@ console.log(range); // [0, 1, 2, 3, 4]
 
 ## State VS Props
 | state | props |
-| --------------- | --------------- |
+| ----- | ----- |
 | **Internal** data, owned by component | **External** data, owned by parent component |
 | Component is "memory" | Similar to function parameters |
 | can be updated by the component itself | Props are Read-only |
 | Uplating state causes component to re-render | **Receiving new props causes component to re-render.** Usually when the parent's state has been  updated |
 | Used to make components interactive | Used by parent to configure child component ("setting") |
 
+## Thinking in React (The Process)
+1. Break the de4sired UI into **components** and establish the **component tree**.
+2. Build a **static** version in React(without state).
+3. Think about state:
+	- When to use state
+	- Types of state: local vs. global
+	- Where to place each piece of state
+4. Establish **data flow:**
+	- One-way data flow
+	- Child-to-parent communication
+	- Accessing global state
+
+## State Management
+- Deciding **when** to create pieces of state, what **types** of state are necessary, **where** to place each piece of state, and how data **flows** through the app. 
+- Giving each piece of state a **home**.
+
+## Local State Vs. Global State
+
+| Loacal State | Global State | 
+| ------------ | ------------ |
+| State needed **only by one or few components** | State that **many components** might need |
+| State that is defined in a component and **only that component and child components** have access to it (by passing via props) | **Shared** state that is accessible to **every component** in the entire application |
+| _**We should always start with local state**_||
+
+## When to use state and where to use state ?
+![not found](./state.png)
+
+## Lifting State Up
+**By lifting state up, we have successfully shared one piece of state with multiple components indifferent positions in the component tree.**
 
