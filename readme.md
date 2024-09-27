@@ -276,5 +276,18 @@ console.log(range); // [0, 1, 2, 3, 4]
 ![not found](./state.png)
 
 ## Lifting State Up
-**By lifting state up, we have successfully shared one piece of state with multiple components indifferent positions in the component tree.**
+**By lifting state up, we can share one piece of state with multiple components in different positions in the component tree.**
 
+But, the question is If data flows from parent to children, how can child update state in parent ?
+- Well, parent can pass setter function as props to the child components so that, child can update the state. It is called **Child to parent data flow**. 
+
+## Deriving State
+- A state that is cmoputed from an existing piece of state or from props
+- For example: if you need to calculate product price of a cart, then you will be needed three state (cart, numItems, totalPrice). But, this will cause extra two re-rendering for numItems & totalPrice state.
+- Better is to **derive state** from cart state and calculate the numItems and totalPrice.
+
+## The Children Props
+-  ~I Syntex: `<Component /> JSX </Component>`
+- 👉 The children prop allow us **to pass JSX into an element** (besides regular props).
+-  ~I Essential tool to make **reusable** and **configurable** components (especially component **content**).
+-  ~I Really useful for **generic** components that **dont't know their content** before being used((e.g. modal).
