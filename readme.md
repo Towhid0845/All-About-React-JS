@@ -73,6 +73,7 @@ It controls the contents of the container node you pass in. It currently returns
 
 ## Debuging in React
 1. **If changes is not showing: ** check wheather your app is running or not.
+2. **if changes is not showing in component: ** make sure that you **return** everything inside the component. 
 
 ## React Developer Tools 🔥
 
@@ -291,3 +292,42 @@ But, the question is If data flows from parent to children, how can child update
 - 👉 The children prop allow us **to pass JSX into an element** (besides regular props).
 -  ~I Essential tool to make **reusable** and **configurable** components (especially component **content**).
 -  ~I Really useful for **generic** components that **dont't know their content** before being used((e.g. modal).
+
+## Component Spliting
+| SMALL COMPONENTS | HUGE COMPONENTS |
+| ---------------- | ----------------|
+| We end up with 100s of mini components | Too many responsibilities |
+| Confusing codebase | Complex code, hard to understand, hard to reuse |
+| Too **abstracted** | Might need too many props |
+
+_**Therfore, We need to find a balance between too small and too broad**_
+
+### General Guidelines
+✅ Be aware that creating a new component **creates a new abstraction.** Abstractions have a cost, because **more abstractions require more mental energy** to swithch back and forth between components. So try not to create new components too early.
+✅ Name a component according to **what it does or what is displays**. Don'tbe afraid of using long compnent names.
+✅ Never declare a new component **inside another component!**.
+✅ **Co-locate related components inside the same file**. Don't separate components into different files too early.
+✅ It's completely normal that an app has components of **many different sizes,** including very small and huge ones.
+
+### How to Split a UI  into Components
+👉 The  4 criteria for spliting a UI into components:
+	1. Logical separation of content/layout
+		- Does the component contain pieces of contnt or layut that **don't belong together ?**
+	2. Resuability
+		- Is it possible to reuse part oft the component ?
+		- Do you want or need to reuse it ?
+	3. Responsibilities/complexity
+		- Is the component doing too **many different things?**
+		- Does the omponent rely on too **many porps ?**
+		- Does the component have too **many pieces of state** and/or effects ?
+		- Is the code, including JSX, too **complex/confusing ?**
+	4. Personal coding style
+		- Do you prefer **smaller** function/components ?
+
+
+## Component Categories
+👉 Most of your components will  naturally fall into one of three categories:
+| Stateless/presentational components | Stateful components | Structural components | 
+| No State | Have state| 'pages', 'layouts', or 'screens' of the app |
+| Can receive props and simply present received data or other content | Can still be reusable | Result of composition |
+| Usually small and reusable |  | Can be huge and non-reusable (but don't have to) |
