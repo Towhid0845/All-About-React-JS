@@ -331,3 +331,12 @@ _**Therfore, We need to find a balance between too small and too broad**_
 | No State | Have state| 'pages', 'layouts', or 'screens' of the app |
 | Can receive props and simply present received data or other content | Can still be reusable | Result of composition |
 | Usually small and reusable |  | Can be huge and non-reusable (but don't have to) |
+
+
+## Component Composition
+1. **Component Composition:** Combining different components using the **children prop** (or implicitly defined props).
+	- Using this We can create highly reusable and flexible components
+	- We can Fix props drilling (great for layouts)
+	- Syntex: `<Component>your code</Component>`. It will receive as a `{children}` props.
+2. **Alternative** of children props is **element**, which is explicitly defined props.
+	- syntex: `<Component element={your-code} />`. It will receive as a `{element}` props.
