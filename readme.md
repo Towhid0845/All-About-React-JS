@@ -350,4 +350,4 @@ _**Therfore, We need to find a balance between too small and too broad**_
 |  | Has its own state and props |  |  |
 | Has a lifecycle (can "be born", "live", and "die") |  |  |  |
 
-![component vs element](./component vs element.png)
+![component vs element](./component-vs-element.png)
