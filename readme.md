@@ -353,3 +353,12 @@ _**Therfore, We need to find a balance between too small and too broad**_
 
 ## How Components are Displayed on the Screen
 ![how-components-displayed](./how-components-displayed.png)
+
+## How Renders are Triggered ?
+	The tow situation that trigger renders:
+	1. Initial render of the application
+	2. State is updated in one or more component instances (re-render)
+
+👉 The render process is triggerd for the entire application.
+👉 In practive, it looks like React only re-renders the component where the state update happens, but that's not how it works behind the scenes.
+👉 Renders are not triggred immediately, but scheduled for when the JS engine has some "free time"". There is also batching of multiple setState calls in event handlers.
