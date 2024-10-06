@@ -347,7 +347,9 @@ _**Therfore, We need to find a balance between too small and too broad**_
 | Description of a piece of UI| Instances are created when we "use" components | JSX is converted to React.createElement() function calls | React Elements Inserted to DOM Element(HTML) |
 | A component is a function thaqt returns React element (element tree), usually written as JSX | Teact internally calls Actual component when we create instances| A React element is the result of these function calls | Actual visual representation of the component instance in the browser |
 | "Bluepront" or "Template"| Actual "physical" mainfestation of a component | Information necessary to create DOM element |  |
-|  | Has its own state and props |  |  |
-| Has a lifecycle (can "be born", "live", and "die") |  |  |  |
+| Has a lifecycle (can "be born", "live", and "die") | Has its own state and props |  |  |
 
 ![component vs element](./component-vs-element.png)
+
+## How Components are Displayed on the Screen
+![how-components-displayed](./how-components-displayed.png)
