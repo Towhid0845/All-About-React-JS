@@ -340,3 +340,14 @@ _**Therfore, We need to find a balance between too small and too broad**_
 	- Syntex: `<Component>your code</Component>`. It will receive as a `{children}` props.
 2. **Alternative** of children props is **element**, which is explicitly defined props.
 	- syntex: `<Component element={your-code} />`. It will receive as a `{element}` props.
+
+## COMPONENT VS INSTANCE VS ELEMENT VS DOM ELEMENT
+| Component | Instance | Element | DOM Element |
+|-----------|----------|---------|-------------|
+| Description of a piece of UI| Instances are created when we "use" components | JSX is converted to React.createElement() function calls | React Elements Inserted to DOM Element(HTML) |
+| A component is a function thaqt returns React element (element tree), usually written as JSX | Teact internally calls Actual component when we create instances| A React element is the result of these function calls | Actual visual representation of the component instance in the browser |
+| "Bluepront" or "Template"| Actual "physical" mainfestation of a component | Information necessary to create DOM element |  |
+|  | Has its own state and props |  |  |
+| Has a lifecycle (can "be born", "live", and "die") |  |  |  |
+
+![component vs element](./component vs element.png)
