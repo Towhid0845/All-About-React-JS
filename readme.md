@@ -424,9 +424,8 @@ What is the Key Props ?
 
 ## Types of Logic in React Component
 Two types of logic in react components:
-	1. **Render Logic**
-	2. **Event Handler Functions:**
-	
+1. **Render Logic**
+2. **Event Handler Functions:**
 	![render-logic.png](./render-logic.png)
 
 ### Render Logic
