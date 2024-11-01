@@ -437,13 +437,13 @@ What is the Key Props ?
 
 ## How State Updates are BATCHED
 
-	![state update](./state-update-1.png)
-	![state update batch](./state-update-batch.png)
+![state update](./state-update-1.png)
+![state update batch](./state-update-batch.png)
 
 Updating State is **ASYNCHRONOUS:**
 
-	![updating state asynchronous](./updating-state-asynchronous.png)
+![updating state asynchronous](./updating-state-asynchronous.png)
 
 Batching Beyound Event Handler Functions:
 
-	![batching-beyond](./batching-beyond.png)
+![batching-beyond](./batching-beyond.png)
