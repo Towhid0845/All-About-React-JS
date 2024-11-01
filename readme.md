@@ -422,3 +422,28 @@ What is the Key Props ?
 
 	![key reset](./key-reset.png)
 
+## Render Logic
+- Two types of logic in react components:
+
+	![render-logic.png](./render-logic.png)
+
+- Functional Programming Principles:
+
+	![side-effects](./side-effects.png)
+
+- Rules for Render Logic:
+
+	![rules-for-render-logic](./rules-for-render-logic.png)
+
+## How State Updates are BATCHED
+
+	![state update](./state-update-1.png)
+	![state update batch](./state-update-batch.png)
+
+Updating State is **ASYNCHRONOUS:**
+
+	![updating state asynchronous](./updating-state-asynchronous.png)
+
+Batching Beyound Event Handler Functions:
+
+	![batching-beyond](./batching-beyond.png)
