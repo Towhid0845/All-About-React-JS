@@ -391,7 +391,34 @@ It happens in two steps:
 		![reconciliation-01](./reconciliation-1.png)
 
 
-	* Render Phase itself consist of 2 more other phases:
-		* Commit Phase.
-		* Browser Paint.
-			![commit-phase](./commit.png)
+* Render Phase itself consist of 2 more other phases:
+	* Commit Phase.
+
+		![commit-phase](./commit.png)
+
+	* Browser Paint.
+	
+		![paint-phase](./paint.png)
+
+* **Render Recap:**
+
+	![render-recap](./recap.png)
+
+## Diffing
+How Diffing Works ?
+
+	![diffing](./diffing.png)
+	![diffing](./diffing2.png)
+
+What is the Key Props ?
+
+	![key props](./key.png)
+
+	* Keys in LIST:
+	
+		![keys in list](./key list.png)
+
+	* Key Reset:
+
+		![key reset](./key reset.png)
+
