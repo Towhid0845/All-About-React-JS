@@ -407,18 +407,18 @@ It happens in two steps:
 ## Diffing
 How Diffing Works ?
 
-	![diffing](./diffing.png)
-	![diffing](./diffing2.png)
+![diffing](./diffing.png)
+![diffing](./diffing2.png)
 
 What is the Key Props ?
 
-	![key props](./key.png)
+![key props](./key.png)
 
 	* Keys in LIST:
 	
-		![keys in list]('./key list.png')
+	![keys in list](./key-list.png)
 
 	* Key Reset:
 
-		![key reset](./key reset.png)
+	![key reset](./key-reset.png)
 
