@@ -414,11 +414,11 @@ What is the Key Props ?
 
 ![key props](./key.png)
 
-	* Keys in LIST:
-	
+* Keys in LIST:
+
 	![keys in list](./key-list.png)
 
-	* Key Reset:
+* Key Reset:
 
 	![key reset](./key-reset.png)
 
