@@ -426,9 +426,10 @@ What is the Key Props ?
 Two types of logic in react components:
 1. **Render Logic**
 2. **Event Handler Functions:**
+
 	![render-logic.png](./render-logic.png)
 
-### Render Logic
+### 1. Render Logic
 - Functional Programming Principles:
 
 	![side-effects](./side-effects.png)
@@ -437,7 +438,7 @@ Two types of logic in react components:
 
 	![rules-for-render-logic](./rules-for-render-logic.png)
 
-- ** How State Updates are BATCHED**
+- **How State Updates are BATCHED**
 
 	![state update](./state-update-1.png)
 	![state update batch](./state-update-batch.png)
@@ -450,3 +451,4 @@ Two types of logic in react components:
 
 	![batching-beyond](./batching-beyond.png)
 
+### 2. Event Handler Functions
