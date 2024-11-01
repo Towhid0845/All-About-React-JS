@@ -390,3 +390,8 @@ It happens in two steps:
 
 		![reconciliation-01](./reconciliation-1.png)
 
+
+	* Render Phase itself consist of 2 more other phases:
+		* Commit Phase.
+		* Browser Paint.
+			![commit-phase](./commit.png)
