@@ -356,17 +356,20 @@ _**Therfore, We need to find a balance between too small and too broad**_
 
 ## Render in React
 It happens in two steps: 
-	1. Trigger
-	2. Render
+1. Trigger
+2. Render
 
 ### Step 01: How Renders are Triggered ?
-	The two situation that trigger renders:
-	1. Initial render at the start of the application
-	2. State is updated in one or more component instances (re-render)
+The two situation that trigger renders:
 
-👉 The render process is triggerd for the entire application.
-👉 In practive, it looks like React only re-renders the component where the state update happens, but that's not how it works behind the scenes. Actually react renders the whole component tree on each state update.
-👉 Renders are not triggred immediately, but scheduled for when the JS engine has some "free time(in ms)" There is also batching of multiple setState calls in event handlers.
+1. Initial render at the start of the application
+2. State is updated in one or more component instances (re-render)
+
+-👉 The render process is triggerd for the entire application.
+
+-👉 In practive, it looks like React only re-renders the component where the state update happens, but that's not how it works behind the scenes. Actually react renders the whole component tree on each state update.
+
+-👉 Renders are not triggred immediately, but scheduled for when the JS engine has some "free time(in ms)" There is also batching of multiple setState calls in event handlers.
 
 ### Step 02: The RENDER Phase
 Before we start RENDER phase, we need to understand few concepts.
