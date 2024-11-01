@@ -375,18 +375,18 @@ It happens in two steps:
 	Before we start RENDER phase, we need to understand few concepts.
 	- **Concept of Vertual DOM:**
 
-	![virtual-dom](./virtual-DOM.png)
+		![virtual-dom](./virtual-DOM.png)
 
 	- **Concept of Reconciliaton:** 
 
-	![reconciliation](./reconciliation.png)
+		![reconciliation](./reconciliation.png)
 
-		* It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
-		* Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
+		It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
+		Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
 
-	![fiber](./fiber.png)
+		![fiber](./fiber.png)
 
 	- Back to Reconciliation:
 
-	![reconciliation-01](./reconciliation-1.png)
+		![reconciliation-01](./reconciliation-1.png)
 
