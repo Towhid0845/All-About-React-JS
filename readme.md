@@ -359,29 +359,34 @@ It happens in two steps:
 1. Trigger
 2. Render
 
-### Step 01: How Renders are Triggered ?
-The two situation that trigger renders:
+	### Step 01: How Renders are Triggered ?
+	The two situation that trigger renders:
 
-1. Initial render at the start of the application
-2. State is updated in one or more component instances (re-render)
+	1. Initial render at the start of the application
+	2. State is updated in one or more component instances (re-render)
 
--👉 The render process is triggerd for the entire application.
+	👉 The render process is triggerd for the entire application.
 
--👉 In practive, it looks like React only re-renders the component where the state update happens, but that's not how it works behind the scenes. Actually react renders the whole component tree on each state update.
+	👉 In practive, it looks like React only re-renders the component where the state update happens, but that's not how it works behind the scenes. Actually react renders the whole component tree on each state update.
 
--👉 Renders are not triggred immediately, but scheduled for when the JS engine has some "free time(in ms)" There is also batching of multiple setState calls in event handlers.
+	👉 Renders are not triggred immediately, but scheduled for when the JS engine has some "free time(in ms)" There is also batching of multiple setState calls in event handlers.
 
-### Step 02: The RENDER Phase
-Before we start RENDER phase, we need to understand few concepts.
-- **Concept of Vertual DOM:**
-![virtual-dom](./virtual-DOM.png)
+	### Step 02: The RENDER Phase
+	Before we start RENDER phase, we need to understand few concepts.
+	- **Concept of Vertual DOM:**
 
-- **Concept of Reconciliaton:** 
-![reconciliation](./reconciliation.png)
+	![virtual-dom](./virtual-DOM.png)
 
-	* It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
-	* Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
-	* ![fiber](./fiber.png)
+	- **Concept of Reconciliaton:** 
 
-- Back to Reconciliation:
-![reconciliation-01](./reconciliation-1.png)
+	![reconciliation](./reconciliation.png)
+
+		* It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
+		* Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
+
+	![fiber](./fiber.png)
+
+	- Back to Reconciliation:
+
+	![reconciliation-01](./reconciliation-1.png)
+
