@@ -381,8 +381,8 @@ It happens in two steps:
 
 		![reconciliation](./reconciliation.png)
 
-		It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
-		Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
+		- It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
+		- Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
 
 		![fiber](./fiber.png)
 
