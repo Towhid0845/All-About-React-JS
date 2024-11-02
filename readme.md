@@ -457,11 +457,15 @@ If you click on a button, it will create an event at the root of the Document (t
 ![event handler function](./event-handler-function.png)
 ![how react handle events](./how-react-hanle-events.png)
 ![synthetic events](./synthetic-events.png)
+
+## Library Vs Framework
 ![analogy](./analogy.png)
 ![analogy2](./analogy2.png)
 ![framework-vs-library](./framework-vs-library.png)
 ![3rd party library](./3rd-party-library.png)
 ![frameworks](./frameworks.png)
+
+## Summary
 ![summary-1](./summary-1.png)
 ![summary-2](./summary-2.png)
 ![summary-3](./summary-3.png)
