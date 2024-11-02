@@ -465,6 +465,18 @@ If you click on a button, it will create an event at the root of the Document (t
 ![3rd party library](./3rd-party-library.png)
 ![frameworks](./frameworks.png)
 
+# Component (Instance) Lifecycle
+![component lifecycle](./component-lifecycle.png)
+
+
+
+
+
+
+
+
+
+
 ## Summary 🔥
 ![summary-1](./summary-1.png)
 ![summary-2](./summary-2.png)
