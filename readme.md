@@ -468,9 +468,15 @@ If you click on a button, it will create an event at the root of the Document (t
 # Component (Instance) Lifecycle
 ![component lifecycle](./component-lifecycle.png)
 
+### Where to Write Side Effect Code ?
+- In Event Handler Function.
+- In useEffcet.
 
+![where to write side effect](./where-to-write-side-effect.png)
 
+### Event Hnadler vs useEffect
 
+![Event Handler VS useEffect](./event-handler-vs-useEffect)
 
 
 
