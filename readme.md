@@ -452,3 +452,16 @@ Two types of logic in react components:
 	![batching-beyond](./batching-beyond.png)
 
 ### 2. Event Handler Functions
+If you click on a button, it will create an event at the root of the Document (top of the tree not in that button). After that It will travel all the way untill it reaches the target element(where the click happend). Then the event object travels all the way back up the entire tree to the root.
+
+![event handler function](./event-handler-function.png)
+![how react handle events](./how-react-hanle-events.png)
+![synthetic events](./synthetic-events.png)
+![analogy](./analogy.png)
+![analogy2](./analogy2.png)
+![framework-vs-library](./framework-vs-library.png)
+![3rd party library](./3rd-party-library.png)
+![frameworks](./frameworks.png)
+![summary-1](./summary-1.png)
+![summary-2](./summary-2.png)
+![summary-3](./summary-3.png)
