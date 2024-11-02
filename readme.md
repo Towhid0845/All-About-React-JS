@@ -178,7 +178,7 @@ when update_function(setCurrentValue) is updated, currentValue = updated_Value
 
 📓 see the detail in 📁learn > 📁src > index.js > at point 20
 
-## Usefull Methods
+## Usefull Methods 🔥
 
 ### Arrau.from()
 `Array.from()` is a built-in JavaScript method that creates a new array instance from an array-like or iterable object. It is particularly useful when you want to convert objects like NodeLists, strings, or Sets into actual arrays, allowing you to use array methods on them.
@@ -235,12 +235,12 @@ console.log(range); // [0, 1, 2, 3, 4]
 - When we use map() method to extract a list (every child of the list must contain a unique value), we always use a key prop.
 
 
-## Controlled Element in React Form
+## Controlled Element in React Form 🔥
 - input fields like input, dropdown should always use useState to update data so that react can control the form.
 - try to call a function like this: `onSubmit = {handleSubmit}`. don't do other works inline.
 
 
-## State VS Props
+## State VS Props 🔥
 | state | props |
 | ----- | ----- |
 | **Internal** data, owned by component | **External** data, owned by parent component |
@@ -249,7 +249,7 @@ console.log(range); // [0, 1, 2, 3, 4]
 | Uplating state causes component to re-render | **Receiving new props causes component to re-render.** Usually when the parent's state has been  updated |
 | Used to make components interactive | Used by parent to configure child component ("setting") |
 
-## Thinking in React (The Process)
+## Thinking in React (The Process) 🔥
 1. Break the de4sired UI into **components** and establish the **component tree**.
 2. Build a **static** version in React(without state).
 3. Think about state:
@@ -261,11 +261,11 @@ console.log(range); // [0, 1, 2, 3, 4]
 	- Child-to-parent communication
 	- Accessing global state
 
-## State Management
+## State Management 🔥
 - Deciding **when** to create pieces of state, what **types** of state are necessary, **where** to place each piece of state, and how data **flows** through the app. 
 - Giving each piece of state a **home**.
 
-## Local State Vs. Global State
+## Local State Vs. Global State 🔥
 
 | Loacal State | Global State | 
 | ------------ | ------------ |
@@ -273,27 +273,27 @@ console.log(range); // [0, 1, 2, 3, 4]
 | State that is defined in a component and **only that component and child components** have access to it (by passing via props) | **Shared** state that is accessible to **every component** in the entire application |
 | _**We should always start with local state**_||
 
-## When to use state and where to use state ?
+## When to use state and where to use state ? 🔥
 ![not found](./state.png)
 
-## Lifting State Up
+## Lifting State Up 🔥
 **By lifting state up, we can share one piece of state with multiple components in different positions in the component tree.**
 
 But, the question is If data flows from parent to children, how can child update state in parent ?
 - Well, parent can pass setter function as props to the child components so that, child can update the state. It is called **Child to parent data flow**. 
 
-## Deriving State
+## Deriving State 🔥
 - A state that is cmoputed from an existing piece of state or from props
 - For example: if you need to calculate product price of a cart, then you will be needed three state (cart, numItems, totalPrice). But, this will cause extra two re-rendering for numItems & totalPrice state.
 - Better is to **derive state** from cart state and calculate the numItems and totalPrice.
 
-## The Children Props
+## The Children Props 🔥
 -  ~I Syntex: `<Component /> JSX </Component>`
 - 👉 The children prop allow us **to pass JSX into an element** (besides regular props).
 -  ~I Essential tool to make **reusable** and **configurable** components (especially component **content**).
 -  ~I Really useful for **generic** components that **dont't know their content** before being used((e.g. modal).
 
-## Component Spliting
+## Component Spliting 🔥
 | SMALL COMPONENTS | HUGE COMPONENTS |
 | ---------------- | ----------------|
 | We end up with 100s of mini components | Too many responsibilities |
@@ -302,7 +302,7 @@ But, the question is If data flows from parent to children, how can child update
 
 _**Therfore, We need to find a balance between too small and too broad**_
 
-### General Guidelines
+### General Guidelines 
 ✅ Be aware that creating a new component **creates a new abstraction.** Abstractions have a cost, because **more abstractions require more mental energy** to swithch back and forth between components. So try not to create new components too early.
 ✅ Name a component according to **what it does or what is displays**. Don'tbe afraid of using long compnent names.
 ✅ Never declare a new component **inside another component!**.
@@ -325,7 +325,7 @@ _**Therfore, We need to find a balance between too small and too broad**_
 		- Do you prefer **smaller** function/components ?
 
 
-## Component Categories
+## Component Categories 🔥
 👉 Most of your components will  naturally fall into one of three categories:
 | Stateless/presentational components | Stateful components | Structural components | 
 | No State | Have state| 'pages', 'layouts', or 'screens' of the app |
@@ -333,7 +333,7 @@ _**Therfore, We need to find a balance between too small and too broad**_
 | Usually small and reusable |  | Can be huge and non-reusable (but don't have to) |
 
 
-## Component Composition
+## Component Composition 🔥
 1. **Component Composition:** Combining different components using the **children prop** (or implicitly defined props).
 	- Using this We can create highly reusable and flexible components
 	- We can Fix props drilling (great for layouts)
@@ -341,7 +341,7 @@ _**Therfore, We need to find a balance between too small and too broad**_
 2. **Alternative** of children props is **element**, which is explicitly defined props.
 	- syntex: `<Component element={your-code} />`. It will receive as a `{element}` props.
 
-## COMPONENT VS INSTANCE VS ELEMENT VS DOM ELEMENT
+## COMPONENT VS INSTANCE VS ELEMENT VS DOM ELEMENT 🔥
 | Component | Instance | Element | DOM Element |
 |-----------|----------|---------|-------------|
 | Description of a piece of UI| Instances are created when we "use" components | JSX is converted to React.createElement() function calls | React Elements Inserted to DOM Element(HTML) |
@@ -351,10 +351,10 @@ _**Therfore, We need to find a balance between too small and too broad**_
 
 ![component vs element](./component-vs-element.png)
 
-## How Components are Displayed on the Screen
+## How Components are Displayed on the Screen 🔥
 ![how-components-displayed](./how-components-displayed.png)
 
-## Render in React
+## Render in React 🔥
 It happens in two steps: 
 1. Trigger
 2. Render
@@ -404,7 +404,7 @@ It happens in two steps:
 
 	![render-recap](./recap.png)
 
-## Diffing
+## Diffing 🔥
 How Diffing Works ?
 
 ![diffing](./diffing.png)
@@ -422,7 +422,7 @@ What is the Key Props ?
 
 	![key reset](./key-reset.png)
 
-## Types of Logic in React Component
+## Types of Logic in React Component 🔥
 Two types of logic in react components:
 1. **Render Logic**
 2. **Event Handler Functions:**
@@ -458,14 +458,14 @@ If you click on a button, it will create an event at the root of the Document (t
 ![how react handle events](./how-react-hanle-events.png)
 ![synthetic events](./synthetic-events.png)
 
-## Library Vs Framework
+## Library Vs Framework 🔥
 ![analogy](./analogy.png)
 ![analogy2](./analogy2.png)
 ![framework-vs-library](./framework-vs-library.png)
 ![3rd party library](./3rd-party-library.png)
 ![frameworks](./frameworks.png)
 
-## Summary
+## Summary 🔥
 ![summary-1](./summary-1.png)
 ![summary-2](./summary-2.png)
 ![summary-3](./summary-3.png)
