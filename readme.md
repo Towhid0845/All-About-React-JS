@@ -476,7 +476,15 @@ If you click on a button, it will create an event at the root of the Document (t
 
 ### Event Hnadler vs useEffect
 
-![Event Handler VS useEffect](./event-handler-vs-useEffect)
+![Event Handler VS useEffect](./event-handler-vs-useEffect.png)
+
+
+# About useEffect
+![useEffect](./useEffect.png)
+![useEffet synchronization](./useEffect-syncronize.png)
+![useEffect Lifecycle](./useEffect-lifecycle.png)
+
+
 
 
 
