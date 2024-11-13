@@ -483,8 +483,8 @@ If you click on a button, it will create an event at the root of the Document (t
 ![useEffect](./useEffect.png)
 ![useEffet synchronization](./useEffect-syncronize.png)
 ![useEffect Lifecycle](./useEffect-lifecycle.png)
-
-
+![useEffect execution](./when-effect-executed.png)
+![clean up funtion](./cleanUp.png)
 
 
 
