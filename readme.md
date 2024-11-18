@@ -486,8 +486,18 @@ If you click on a button, it will create an event at the root of the Document (t
 ![useEffect execution](./when-effect-executed.png)
 ![clean up funtion](./cleanUp.png)
 
+# hooks
+![hook](./images/hook.png)
+![types of hook](./images/types-of-hook.png)
 
+# Rules of hooks
+![hook rules](./images/hook-rules.png)
+![hook rules](./images/hook-rules-1.png)
+![hook rules](./images/hook-rules-2.png)
 
+# useSate
+# useRef
+# Custome hooks
 
 
 
