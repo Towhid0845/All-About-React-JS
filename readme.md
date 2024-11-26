@@ -1,12 +1,11 @@
-## What is React? 🔥
-
+# What is React? 🔥
 React is a JavaScript library for building user interfaces and it is all about components.
 
-### IMPERATIVE VS DECLARATIVE
+## IMPERATIVE VS DECLARATIVE
 **Imperative:**
-	- Vanila JS use **Imperative** syntax.
+	- Vanilla JS use **Imperative** syntax.
 	- Manual DOM element selections and DOM traversing.
-	- Setp by step DOM mutations untill we reach the desired UI.
+	- Step by step DOM mutations until we reach the desired UI.
 **Declarative:**
 	- Describe what UI should look like using JSX, **based on current data**.
 	- React is an **abstraction** away from DOM: **we never touch the DOM**.
@@ -14,51 +13,48 @@ React is a JavaScript library for building user interfaces and it is all about c
 
 Online code editor for React.js is codesendbox.io. To access it just right `react.new`
 
-## Create a React Application 🔥
-
+## Create a React Application
 **Two options for setting up a new react project.**
 
-1. `create-react-app` tool.
+### 1. using `create-react-app` tool.
 
-   - The commands are:
+- The commands are:
 
-     ```code
-     npx create-react-app xyz-app
-     cd xyz-app
-     npm start
-     ```
+	```code
+	npx create-react-app xyz-app
+	cd xyz-app
+	npm start
+	```
 
-   - 👉 It is a complete **"Stater Kit"** for react applications.
-   - 👍 Everything is already configured: ESLint, Prettier, Jest, etc.
-   - 👎 Uses slow and outdated technologies(i.e. webpack). This is why react official documents discourage to use this tool. Because in real world projects it takes longer time to refresh.
-   - 👍But, we can use this tool for learning purpose. It is 100% perfect for learning projects. Because it easy to use in learning.
+- 👉 It is a complete **"Stater Kit"** for react applications.
+- 👍 Everything is already configured: ESLint, Prettier, Jest, etc.
+- 👎 Uses slow and outdated technologies(i.e. webpack). This is why react official documents discourage to use this tool. Because in real world projects it takes longer time to refresh.
+- 👍But, we can use this tool for learning purpose. It is 100% perfect for learning projects. Because it easy to use in learning.
 
-2. Using VITE:
-   - The commands are:
-     ```code
-     npm create vite@latest
-     and then, follow the steps.
-     ```
-   - 👉 It is a modern tool that contains a template for setting up react applications
-   - 👎 Need to manually setup ESLint and others.
-   - 👍 Extremely fast hot module replacement (HRM) and bundling.
-   - 👍 Use for modern real world apps.
+### 2. Using VITE:
+- The commands are:
+	```code
+	npm create vite@latest
+	and then, follow the steps.
+	```
+- 👉 It is a modern tool that contains a template for setting up react applications
+- 👎 Need to manually setup ESLint and others.
+- 👍 Extremely fast hot module replacement (HRM) and bundling.
+- 👍 Use for modern real world apps.
 
-## File Structure of React 🔥
-
+## File Structure of React
 App.js ➡️ index.js ➡️ index.html
 
 - App.js is a component. This is the actual file where we write all our code. We export it in index.js(or other js file)
 - index.js is works as a medium. It imports the App.js file and render it in the index.html file using an id.
 - index.html is the reason for that we see the project in web browser.
 
-## Babel 🔥
-
+# Babel 🔥
 - babel is a JavaScript compiler
 - it wrap's the code for us.
 - It is automatically installed in React when we create a react app.
 
-Example ❤️  
+**Example ❤️**
 |code for user|code for browser|
 |-------------|----------------|
 |"use strict";| |
@@ -67,21 +63,19 @@ Example ❤️
 |console.log('Hello Towhid');|console.log('Hello Towhid');|
 |}|}|
 
-## ReactDOM.render() 🔥
-
+# Things in React 🔥
+## ReactDOM.render()
 It controls the contents of the container node you pass in. It currently returns a reference to the root ReactComponent instance.
 
-## Debuging in React
+## Debugging in React
 1. **If changes is not showing: ** check wheather your app is running or not.
 2. **if changes is not showing in component: ** make sure that you **return** everything inside the component. 
 
-## React Developer Tools 🔥
-
+## React Developer Tools
 - It is a browser(chrome, mozilla, safari, edge) extension for React.
 - We use it to know what components are used in a React application.
 
-## JSX (JavaScript XML) 🔥
-
+## JSX (JavaScript XML)
 - Declarative syntax to descrive what components look and how they work.
 - Extension of JavaScript that allows us to **embed JavaScript, CSS, and Reat components into HTML**.
 - Each JSX element is **converted** to a React.createElement function call.
@@ -102,24 +96,27 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
                         This is JSX
 ```
 
-## React Fragment 🔥
+## React Fragment
 - the JSX code should wrap within a single tag called `<React.Fragment></React.Fragment>`
 - simplest form of React Fragment is <></>
 
 📓 See the detail in 📁learn > 📁src > index.js > at point 4
 
-## Component 🔥
-- React applicationns are entirely make out of components
+
+
+# Component & Pops 🔥
+## Component
+- React applications are entirely make out of components
 - **Building blocks** of user interfaces in React
 - A piece of UI that has its own **data, logic and appearance**.
-- We buid complex **UIs by building multiple components and combining them**
-- Components can be **resused, nested** inside each other, and pass data between them.
+- We build complex **UIs by building multiple components and combining them**
+- Components can be **reused, nested** inside each other, and pass data between them.
 - At first, it is better to add 'import React from "react"'
 - At least, one function (functional Component) need to add in that component.
 - Function name should be Capitalized.
 - You must return something (JSX).
 
-## Props in React
+## Props in React 
 - Props are used to pass data from **parent components to child components (down the component tree).
 - Essential tool to **configure** and **customize** components (like function parameters).
 - With props, parent components **control** how child components look and work.
@@ -133,20 +130,20 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 - It makes applications easier to debug, as we have more control over the data.
 - It is more performant.
 
-## State 🔥
+# State 🔥
 - State is an internal data that a component **can hold over time**, necessary for information that it needs to **remember** throughout the app's lifecycle. 
 - It is like **Component's memory**. - It can be updated by the component's logic. - If you need to mutate props, you actually **need state**. - It updtae the component's view (by re-rendering it without local variable). 
 - Whenever we want to change something in react we need to use state. 
-- We don't do direct DOM manipolations in React beacuse it is **declarative**.
+- We don't do direct DOM manipulations in React because it is **declarative**.
 
     `cont [temp, setTemp] = useState("")`
     Here, useState is function which we are destructuring as array.
     `temp` is initial value of the state and `setTemp` is a setter function to update the value of `temp`.
 - Each component has and manages **its own state**, no matter how many times we render the same component.
 - With state, we view UI as a **reflection of data changing over time**. We **_describe the reflection_** of data using state, event handlers, and JSX.
-- Use a stte variable for any data that the component should keep track of (remember) over time. **This is data that will change at some point**. In Vanilla JS, that's a let variable, or an [] or {}.
+- Use a state variable for any data that the component should keep track of (remember) over time. **This is data that will change at some point**. In Vanilla JS, that's a let variable, or an [] or {}.
 - Whenever you want something in the component to be **dynamic**, create a piece of state related to that "thing", and update the state when the "thing" should change (aka "be dynamic")
-- When building a conmponent, imagine its view as a **relection of state chnaging over time**.
+- When building a component, imagine its view as a **refection of state changing over time**.
 - _For data that should not trigger component re-renders, **don't use state**. Use a regular variable instead. This a common **beginner mistake**.
 
 ## How is a component view updates ?
@@ -156,7 +153,7 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 _So, React is called "React" because **It Reacts to State Changes by Re-rendering the UI**_
 
 
-## React Hook 🔥
+# React Hook 🔥
 
 - It allows you to use state and other React features without writing a class.
 - Hooks are the functions which "hook into" React state and lifecycle features from function components.
@@ -164,7 +161,7 @@ _So, React is called "React" because **It Reacts to State Changes by Re-renderin
 - Write it at the top of a functional component(before the function return).
 - Hook can not run under any condition
 
-## useState Hook 🔥
+## useState Hook
 
 - It is used to manage data.
 - It takes a single parameter as initial data.
@@ -178,9 +175,9 @@ when update_function(setCurrentValue) is updated, currentValue = updated_Value
 
 📓 see the detail in 📁learn > 📁src > index.js > at point 20
 
-## Usefull Methods 🔥
+## Useful Methods ❤️
 
-### Arrau.from()
+### Array.from()
 `Array.from()` is a built-in JavaScript method that creates a new array instance from an array-like or iterable object. It is particularly useful when you want to convert objects like NodeLists, strings, or Sets into actual arrays, allowing you to use array methods on them.
 
 ### Syntax:
@@ -235,21 +232,41 @@ console.log(range); // [0, 1, 2, 3, 4]
 - When we use map() method to extract a list (every child of the list must contain a unique value), we always use a key prop.
 
 
-## Controlled Element in React Form 🔥
+## Controlled Element in React Form ❤️
 - input fields like input, dropdown should always use useState to update data so that react can control the form.
 - try to call a function like this: `onSubmit = {handleSubmit}`. don't do other works inline.
 
 
-## State VS Props 🔥
+# State VS Props 🔥
 | state | props |
 | ----- | ----- |
 | **Internal** data, owned by component | **External** data, owned by parent component |
 | Component is "memory" | Similar to function parameters |
 | can be updated by the component itself | Props are Read-only |
-| Uplating state causes component to re-render | **Receiving new props causes component to re-render.** Usually when the parent's state has been  updated |
+| Updating state causes component to re-render | **Receiving new props causes component to re-render.** Usually when the parent's state has been  updated |
 | Used to make components interactive | Used by parent to configure child component ("setting") |
 
-## Thinking in React (The Process) 🔥
+## Props Types 🔥
+- In javaScript, it is standard to use propTypes so that it can give us error in console.
+- Types: number, string, array, func, object.
+- You can make a prop required by using (.isRequired)
+- When you use it on a app, import as capitalize but use starting with small letter (i.e App.propTypes).
+- However, we don't need this in typeScript.
+**How to use it**
+	```code
+	import PropTypes from 'prop-types';
+	App.propTypes = {
+		maxRating: PropTypes.number.isRequired,
+		color: PropTypes.string,
+		size: PropTypes.number,
+		message: PropTypes.array,
+		defaultRating: PropTypes.number,
+		className: PropTypes.string,
+		onSetRating: PropTypes.func,
+	}
+	```
+
+# Thinking in React (The Process) 🔥
 1. Break the de4sired UI into **components** and establish the **component tree**.
 2. Build a **static** version in React(without state).
 3. Think about state:
@@ -266,7 +283,6 @@ console.log(range); // [0, 1, 2, 3, 4]
 - Giving each piece of state a **home**.
 
 ## Local State Vs. Global State 🔥
-
 | Loacal State | Global State | 
 | ------------ | ------------ |
 | State needed **only by one or few components** | State that **many components** might need |
@@ -274,7 +290,7 @@ console.log(range); // [0, 1, 2, 3, 4]
 | _**We should always start with local state**_||
 
 ## When to use state and where to use state ? 🔥
-![not found](./state.png)
+![not found](./images/state.png)
 
 ## Lifting State Up 🔥
 **By lifting state up, we can share one piece of state with multiple components in different positions in the component tree.**
@@ -293,7 +309,7 @@ But, the question is If data flows from parent to children, how can child update
 -  ~I Essential tool to make **reusable** and **configurable** components (especially component **content**).
 -  ~I Really useful for **generic** components that **dont't know their content** before being used((e.g. modal).
 
-## Component Spliting 🔥
+## Component Spiting 🔥
 | SMALL COMPONENTS | HUGE COMPONENTS |
 | ---------------- | ----------------|
 | We end up with 100s of mini components | Too many responsibilities |
@@ -349,10 +365,10 @@ _**Therfore, We need to find a balance between too small and too broad**_
 | "Bluepront" or "Template"| Actual "physical" mainfestation of a component | Information necessary to create DOM element |  |
 | Has a lifecycle (can "be born", "live", and "die") | Has its own state and props |  |  |
 
-![component vs element](./component-vs-element.png)
+![component vs element](./images/component-vs-element.png)
 
 ## How Components are Displayed on the Screen 🔥
-![how-components-displayed](./how-components-displayed.png)
+![how-components-displayed](./images/how-components-displayed.png)
 
 ## Render in React 🔥
 It happens in two steps: 
@@ -375,118 +391,118 @@ It happens in two steps:
 	Before we start RENDER phase, we need to understand few concepts.
 	- **Concept of Vertual DOM:**
 
-		![virtual-dom](./virtual-DOM.png)
+		![virtual-dom](./images/virtual-DOM.png)
 
 	- **Concept of Reconciliaton:** 
 
-		![reconciliation](./reconciliation.png)
+		![reconciliation](./images/reconciliation.png)
 
 		- It is the process of **Reconciler**. We can say that *Reconciler* is the engine of React. It's like the heart of React. Reconciler allows us to never touch the DOM directly. Instead it tells React, what the next view(UI) should look like based on *STATE*.
 		- Name of current Reconciler is **FIBER**. It creates only one and never destroyed. It mutates again and again.
 
-		![fiber](./fiber.png)
+		![fiber](./images/fiber.png)
 
 	- Back to Reconciliation:
 
-		![reconciliation-01](./reconciliation-1.png)
+		![reconciliation-01](./images/reconciliation-1.png)
 
 
 * Render Phase itself consist of 2 more other phases:
 	* Commit Phase.
 
-		![commit-phase](./commit.png)
+		![commit-phase](./images/commit.png)
 
 	* Browser Paint.
 	
-		![paint-phase](./paint.png)
+		![paint-phase](./images/paint.png)
 
 * **Render Recap:**
 
-	![render-recap](./recap.png)
+	![render-recap](./images/recap.png)
 
 ## Diffing 🔥
 How Diffing Works ?
 
-![diffing](./diffing.png)
-![diffing](./diffing2.png)
+![diffing](./images/diffing.png)
+![diffing](./images/diffing2.png)
 
 What is the Key Props ?
 
-![key props](./key.png)
+![key props](./images/key.png)
 
 * Keys in LIST:
 
-	![keys in list](./key-list.png)
+	![keys in list](./images/key-list.png)
 
 * Key Reset:
 
-	![key reset](./key-reset.png)
+	![key reset](./images/key-reset.png)
 
 ## Types of Logic in React Component 🔥
 Two types of logic in react components:
 1. **Render Logic**
 2. **Event Handler Functions:**
 
-	![render-logic.png](./render-logic.png)
+	![render-logic.png](./images/render-logic.png)
 
 ### 1. Render Logic
 - Functional Programming Principles:
 
-	![side-effects](./side-effects.png)
+	![side-effects](./images/side-effects.png)
 
 - Rules for Render Logic:
 
-	![rules-for-render-logic](./rules-for-render-logic.png)
+	![rules-for-render-logic](./images/rules-for-render-logic.png)
 
 - **How State Updates are BATCHED**
 
-	![state update](./state-update-1.png)
-	![state update batch](./state-update-batch.png)
+	![state update](./images/state-update-1.png)
+	![state update batch](./images/state-update-batch.png)
 
 - Updating State is **ASYNCHRONOUS:**
 
-	![updating state asynchronous](./updating-state-asynchronous.png)
+	![updating state asynchronous](./images/updating-state-asynchronous.png)
 
 - Batching Beyound Event Handler Functions:
 
-	![batching-beyond](./batching-beyond.png)
+	![batching-beyond](./images/batching-beyond.png)
 
 ### 2. Event Handler Functions
 If you click on a button, it will create an event at the root of the Document (top of the tree not in that button). After that It will travel all the way untill it reaches the target element(where the click happend). Then the event object travels all the way back up the entire tree to the root.
 
-![event handler function](./event-handler-function.png)
-![how react handle events](./how-react-hanle-events.png)
-![synthetic events](./synthetic-events.png)
+![event handler function](./images/event-handler-function.png)
+![how react handle events](./images/how-react-hanle-events.png)
+![synthetic events](./images/synthetic-events.png)
 
 ## Library Vs Framework 🔥
-![analogy](./analogy.png)
-![analogy2](./analogy2.png)
-![framework-vs-library](./framework-vs-library.png)
-![3rd party library](./3rd-party-library.png)
-![frameworks](./frameworks.png)
+![analogy](./images/analogy.png)
+![analogy2](./images/analogy2.png)
+![framework-vs-library](./images/framework-vs-library.png)
+![3rd party library](./images/3rd-party-library.png)
+![frameworks](./images/frameworks.png)
 
-# Component (Instance) Lifecycle
-![component lifecycle](./component-lifecycle.png)
+# Component (Instance) Lifecycle 🔥
+![component lifecycle](./images/component-lifecycle.png)
 
 ### Where to Write Side Effect Code ?
 - In Event Handler Function.
 - In useEffcet.
 
-![where to write side effect](./where-to-write-side-effect.png)
+![where to write side effect](./images/where-to-write-side-effect.png)
 
-### Event Hnadler vs useEffect
+### Event Handler vs useEffect
 
-![Event Handler VS useEffect](./event-handler-vs-useEffect.png)
+![Event Handler VS useEffect](./images/event-handler-vs-useEffect.png)
 
 
-# About useEffect
-![useEffect](./useEffect.png)
-![useEffet synchronization](./useEffect-syncronize.png)
-![useEffect Lifecycle](./useEffect-lifecycle.png)
-![useEffect execution](./when-effect-executed.png)
-![clean up funtion](./cleanUp.png)
+# About useEffect 🔥
+![useEffect](./images/useEffect.png)
+![useEffet synchronization](./images/useEffect-syncronize.png)
+![useEffect Lifecycle](./images/useEffect-lifecycle.png)
+![useEffect execution](./images/when-effect-executed.png)
+![clean up function](./images/cleanUp.png)
 
-# hooks
+# hooks 🔥
 ![hook](./images/hook.png)
 ![types of hook](./images/types-of-hook.png)
 
@@ -497,11 +513,11 @@ If you click on a button, it will create an event at the root of the Document (t
 
 # useSate
 # useRef
-# Custome hooks
+# Custom hooks
 
 
 
-## Summary 🔥
-![summary-1](./summary-1.png)
-![summary-2](./summary-2.png)
-![summary-3](./summary-3.png)
+# Summary 🔥
+![summary-1](./images/summary-1.png)
+![summary-2](./images/summary-2.png)
+![summary-3](./images/summary-3.png)
