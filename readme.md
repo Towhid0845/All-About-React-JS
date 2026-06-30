@@ -2,14 +2,14 @@
 React is a JavaScript library for building user interfaces and it is all about components.
 
 ## IMPERATIVE VS DECLARATIVE
-**Imperative:**
+- **Imperative:**
 	- Vanilla JS use **Imperative** syntax.
 	- Manual DOM element selections and DOM traversing.
 	- Step by step DOM mutations until we reach the desired UI.
-**Declarative:**
+- **Declarative:**
 	- Describe what UI should look like using JSX, **based on current data**.
-	- React is an **abstraction** away from DOM: **we never touch the DOM**.
-	- Instead, we think of the UI as a **reflection of the current data**. 
+	- React is an **abstraction** away from DOM.
+    - **We never touch the DOM** Instead, we think of the UI as a **reflection of the current data**. 
 
 Online code editor for React.js is codesendbox.io. To access it just right `react.new`
 
@@ -68,8 +68,8 @@ App.js ➡️ index.js ➡️ index.html
 It controls the contents of the container node you pass in. It currently returns a reference to the root ReactComponent instance.
 
 ## Debugging in React
-1. **If changes is not showing: ** check wheather your app is running or not.
-2. **if changes is not showing in component: ** make sure that you **return** everything inside the component. 
+1. If changes is not showing: check wheather your app is running or not.
+2. if changes is not showing in component: make sure that you **return** everything inside the component. 
 
 ## React Developer Tools
 - It is a browser(chrome, mozilla, safari, edge) extension for React.
@@ -77,7 +77,7 @@ It controls the contents of the container node you pass in. It currently returns
 
 ## JSX (JavaScript XML)
 - Declarative syntax to descrive what components look and how they work.
-- Extension of JavaScript that allows us to **embed JavaScript, CSS, and Reat components into HTML**.
+- Extension of JavaScript that allows us to **embed JavaScript, CSS, and React components into HTML**.
 - Each JSX element is **converted** to a React.createElement function call.
 - Components must return a block of JSX. It always return a single element. You must need to wrap all the code within a single tag.
 - It is better to use <></> (syntactic sugar format of <React.Fragment>) as wrapper tag.
