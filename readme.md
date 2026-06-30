@@ -122,7 +122,7 @@ ReactDOM.render(<h1>Hello Towhid</h1>, document.getElementById("root"));
 - With props, parent components **control** how child components look and work.
 - **Anything** can be passed as props: single values, arrays, objects, functions, even other components.
 - Props is data that **coming from the outside**, and can only be updated by the **parent component**.
-- For child component props are **read-only**,they are **immutable!** This is one of Teact's strict rules.
+- For child component props are **read-only**,they are **immutable!** This is one of React's strict rules.
 - React follow **one way data flow**. Always parent to child.
 
 ## Why React in ONE-WAY DATA FLOW ?
